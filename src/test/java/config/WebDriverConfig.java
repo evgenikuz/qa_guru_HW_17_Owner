@@ -9,12 +9,17 @@ import org.aeonbits.owner.Config;
 public interface WebDriverConfig extends Config {
 
     @Key("baseUrl")
+    @DefaultValue("https://github.com")
     String getBaseUrl();
 
     @Key("browser.name")
+    @DefaultValue("chrome")
+
     String getBrowserName();
 
     @Key("browser.version")
+    @DefaultValue("140")
+
     String getBrowserVersion();
 
     @Key("remoteUrl")
